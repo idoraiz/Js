@@ -1,11 +1,9 @@
-// function todaysDate () {
-// let today = new Date(',Sunday,January 31, 2021');
-// return today;
-// }
+function getTodayDate() {
+  const date = new Date();
+  const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  console.log(`Today is ${days[date.getDay()]} the ${date.getDate()} of ${months[date.getMonth()]}, ${date.getFullYear()}`);
 
-// let today = todaysDate();
-// console.log('Today is'.getFullYear());
+}
 
-let date = new Date(2021, 31, 28);
-
-console.log(date);
+getTodayDate();
